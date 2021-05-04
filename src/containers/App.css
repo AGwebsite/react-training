@@ -1,0 +1,12 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=cheri);
+
+
+body{
+    font-family: 'Cheri', arial;
+}
+
+h1{
+    color: pink;
+    font-size: larger;
+    font-weight: 200;
+}
