@@ -28,10 +28,11 @@ class App extends Component {
     }
 
     render(){
-        const filterCats = this.state.catNames.filter(catNames =>{
-            return catNames.name.toLowerCase().includes(this.state.searchField.toLowerCase())
+        const {catNames, searchField } = this.state
+        const filterCats = catNames.filter(cat =>{
+            return cat.name.toLowerCase().includes(searchField.toLowerCase())
         })
-        if(this.state.catNames.length === 0){
+        if(!catNames.length){
             return <h1 className='f1'>LoAdinG</h1>
         }else{
             return(
